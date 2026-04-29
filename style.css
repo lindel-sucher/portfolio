@@ -1,0 +1,123 @@
+/* ── Reset & Base ─────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Georgia', serif;
+  background: #ffffff;
+  color: #111111;
+  min-height: 100vh;
+}
+
+/* ── Pages ────────────────────────────────────── */
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 0 40px 80px;
+}
+.page.active { display: block; }
+
+/* ── Header ───────────────────────────────────── */
+header {
+  padding: 28px 0 40px;
+}
+
+.site-name {
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+}
+.site-name:hover { text-decoration: underline; }
+
+/* ── Home Grid ────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px 32px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+.card:hover img { opacity: 0.82; }
+
+.card-title {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+}
+.card-year {
+  font-size: 0.82rem;
+  color: #888;
+  margin-top: 3px;
+}
+
+/* ── Project Page ─────────────────────────────── */
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-images img {
+  width: 100%;
+  display: block;
+}
+
+.project-text h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 6px;
+}
+
+.project-text #project-year-display {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+#project-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* ── Bio Page ─────────────────────────────────── */
+.bio-content {
+  max-width: 560px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 700px) {
+  .page { padding: 0 20px 60px; }
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+}
+#project-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-line;  /* ADD THIS — makes the \n\n line break render */
+}
