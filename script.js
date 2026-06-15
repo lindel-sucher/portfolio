@@ -3,7 +3,7 @@ const projects = {
   "limelight": {
     title: "Limelight",
     year: "2026",
-    description: "Acrylic and oil on canvas",
+    description: "36 x 48 in. Acrylic and oil on canvas",
     images: [
       "images/limelight.jpg"
     ]
@@ -12,7 +12,7 @@ const projects = {
   "sunbleached-pool-chairs": {
     title: "Sunbleached Pool Chairs",
     year: "2026",
-    description: "Oil on canvas",
+    description: "Acrylic on canvas",
     images: [
       "images/sunbleached-pool-chairs.jpg"
     ]
@@ -21,7 +21,7 @@ const projects = {
   "heirloom": {
     title: "Heirloom Up For Grabs",
     year: "2025",
-    description: "Acrylic, oil, monoprint on discarded headboard\n\n\"Heirloom Up for Grabs\" considers inheritance and generational cycles and loops through representations of crochet. Crochet as a practice has been passed down from my grandmother to my mother to myself, a creative link that bonds us. A discarded headboard stands in a fictive bedroom, a domestic space, a traditional space. Drawing focus to a blanket created by my own mother, I reimagined her piece through paint, tenderly acknowledging the comfort her art--and love--brings, despite the discomfort my queerness causes my family, addressed through the phrase, \"I'm sorry I can bring you no comfort.\" Vibrant hues push against the rigid edges and compartments of the headboard, and white lace starkly cuts through a deep blue background, interrupted by gestural brushstrokes. The vivid, succulent depiction of the blanket contrasts the restricting, repetitive side of tradition.",
+    description: "Acrylic, oil, and monoprint on discarded headboard\n\n\"Heirloom Up for Grabs\" considers inheritance and generational cycles and loops through representations of crochet. Crochet as a practice has been passed down from my grandmother to my mother to myself, a creative link that bonds us. A discarded headboard stands in a fictive bedroom, a domestic space, a traditional space. Drawing focus to a blanket created by my own mother, I reimagined her piece through paint, tenderly acknowledging the comfort her art--and love--brings, despite the discomfort my queerness causes my family, addressed through the phrase, \"I'm sorry I can bring you no comfort.\" Vibrant hues push against the rigid edges and compartments of the headboard, and white lace starkly cuts through a deep blue background, interrupted by gestural brushstrokes. The vivid, succulent depiction of the blanket contrasts the restricting, repetitive side of tradition.",
     images: [
       "images/heirloom-up-for-grabs.JPG",
       "images/heirloom1.jpg",
