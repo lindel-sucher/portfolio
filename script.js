@@ -12,7 +12,7 @@ const projects = {
   "sunbleached-pool-chairs": {
     title: "Sunbleached Pool Chairs",
     year: "2026",
-    description: "Acrylic on canvas",
+    description: "36 x 40 in. Acrylic on canvas",
     images: [
       "images/sunbleached-pool-chairs.jpg"
     ]
