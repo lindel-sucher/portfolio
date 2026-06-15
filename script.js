@@ -105,7 +105,7 @@ const projects = {
 "tulips": {
   title: "Tulips",
   year: "2024",
-  description: "9 x 12 in. oil on canvas",
+  description: "9 x 12 in. Oil on canvas.",
   images: [
     "images/tulips.jpg"
   ]
