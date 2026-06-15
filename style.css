@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: "Forum", serif;
   background: #ffffff;
   color: #111111;
   min-height: 100vh;
@@ -22,14 +22,18 @@ header {
 }
 
 .site-name {
-  font-family: 'Georgia', serif;
-  font-size: 0.95rem;
+  font-family: "Ingrid Darling", cursive;
+  font-size: 3.0rem;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #111;
   cursor: pointer;
+  transition: color 0.2s ease;
 }
-.site-name:hover { text-decoration: underline; }
+.site-name:hover {
+  text-decoration: none;
+  color: #c7b73e;
+}
 
 /* ── Home Grid ────────────────────────────────── */
 .grid {
