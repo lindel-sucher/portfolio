@@ -29,6 +29,15 @@ const projects = {
   ]
 },
 
+"peonies": {
+  title: "Peonies",
+  year: "2026",
+  description: "11 x 14 in. Acrylic on canvas.",
+  images: [
+    "images/peonies.jpg"
+  ]
+},
+
   "limelight": {
     title: "Limelight",
     year: "2026",
