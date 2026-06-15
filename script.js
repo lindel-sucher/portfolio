@@ -109,7 +109,7 @@ const projects = {
   images: [
     "images/tulips.jpg"
   ]
-},
+}
   
   // ADD MORE PROJECTS HERE
 
