@@ -198,3 +198,26 @@ header {
 .project-images img {
   cursor: zoom-in;
 }
+
+/* ── Contact ──────────────────────────────────── */
+.contact-heading {
+  font-family: "Ingrid Darling", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+.contact {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.contact a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact a:hover {
+  color: #c7b73e;
+}
