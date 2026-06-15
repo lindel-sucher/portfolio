@@ -102,7 +102,14 @@ const projects = {
     ]
   },
 
-
+"tulips": {
+  title: "Tulips",
+  year: "2024",
+  description: "9 x 12 in. oil on canvas",
+  images: [
+    "images/tulips.jpg"
+  ]
+},
   
   // ADD MORE PROJECTS HERE
 
