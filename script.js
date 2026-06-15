@@ -20,6 +20,15 @@ const projects = {
   ]
 },
 
+"for-sophia": {
+  title: "For Sophia",
+  year: "2026",
+  description: "12 x 12 in. Acrylic on hand-stretched canvas.",
+  images: [
+    "images/forsophia.jpg"
+  ]
+},
+
   "limelight": {
     title: "Limelight",
     year: "2026",
