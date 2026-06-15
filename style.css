@@ -107,9 +107,10 @@ header {
 /* ── Bio Page ─────────────────────────────────── */
 .bio-content {
   max-width: 560px;
-  font-size: 0.95rem;
+  font-size: 1.0rem;
   line-height: 1.8;
   color: #333;
+  margin: 0 auto;
 }
 
 /* ── Responsive ───────────────────────────────── */
