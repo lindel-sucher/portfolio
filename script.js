@@ -1,4 +1,24 @@
 const projects = {
+"anthotypes": {
+  title: "Anthotypes",
+  year: "2025",
+  description: "5 x 7 in. and 11 x 14 in. anthotypes exposed with pressed plant samples, lace, and photo transparencies.",
+  images: [
+    "images/anthotype-1.jpg",
+    "images/anthotype-2.jpg",
+    "images/anthotype-3.jpg",
+    "images/anthotype-4.jpg",
+    "images/anthotype-5.jpg",
+    "images/anthotype-6.jpg",
+    "images/anthotype-7.jpg",
+    "images/anthotype-8.jpg",
+    "images/anthotype-9.jpg",
+    "images/anthotype-10.jpg",
+    "images/anthotype-11.jpg",
+    "images/anthotype-12.jpg",
+    "images/anthotype-13.jpg",
+  ]
+},
 
   "limelight": {
     title: "Limelight",
