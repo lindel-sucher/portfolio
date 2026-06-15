@@ -83,14 +83,6 @@ const projects = {
   },
 
 
-  "saint-catherine": {
-    title: "Saint Catherine",
-    year: "2024",
-    description: "16 x 20 in. Oil on canvas",
-    images: [
-      "images/saint-catherine.jpg"
-    ]
-  }
   
   // ADD MORE PROJECTS HERE
 
