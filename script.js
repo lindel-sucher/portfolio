@@ -1,7 +1,7 @@
 const projects = {
 "anthotypes": {
   title: "Anthotypes",
-  year: "2025",
+  year: "2026",
   description: "5 x 7 in. and 11 x 14 in. anthotypes exposed with pressed plant samples, lace, and photo transparencies.",
   images: [
     "images/anthotype-1.jpg",
