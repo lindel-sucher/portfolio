@@ -1,3 +1,38 @@
+// ─────────────────────────────────────────────────────────────
+// GROUPS
+// ─────────────────────────────────────────────────────────────
+
+const groups = {
+  "artifacts-of-healing": {
+    title: "Artifacts of Healing",
+    projects: ["unwinding"]
+  },
+
+  "hallmarks-of-property": {
+    title: "Hallmarks of Property",
+    projects: [
+      "limelight",
+      "sunbleached-pool-chairs",
+      "heirloom",
+      "frame-of-reference",
+      "it-will-grow-back",
+      "maybe-i-should-thank-you",
+      "summer-litany"
+    ]
+  },
+
+  "studies": {
+    title: "Studies",
+    projects: ["anthotypes", "for-sophia", "peonies", "tulips"]
+  }
+
+  // ADD MORE GROUPS HERE
+};
+
+// ─────────────────────────────────────────────────────────────
+// PROJECTS
+// ─────────────────────────────────────────────────────────────
+
 const projects = {
 "anthotypes": {
   title: "Anthotypes",
@@ -138,19 +173,70 @@ const projects = {
 // ─────────────────────────────────────────────────────────────
 
 const homePage    = document.getElementById('home-page');
+const groupPage    = document.getElementById('group-page');
 const bioPage     = document.getElementById('bio-page');
 const projectPage = document.getElementById('project-page');
 
+let currentGroupId = null;
+
 function showPage(page) {
-  [homePage, bioPage, projectPage].forEach(p => p.classList.remove('active'));
+  [homePage, groupPage, bioPage, projectPage].forEach(p => p.classList.remove('active'));
   page.classList.add('active');
   window.scrollTo(0, 0);
 }
 
-document.getElementById('project-grid').addEventListener('click', e => {
+// ─────────────────────────────────────────────────────────────
+// GROUP PAGE
+// ─────────────────────────────────────────────────────────────
+
+function buildProjectCard(id, data) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.dataset.project = id;
+  card.innerHTML = `
+    <img src="${data.images[0]}" alt="${data.title}" />
+    <p class="card-title">${data.title}</p>
+    <p class="card-year">${data.year}</p>
+  `;
+  return card;
+}
+
+function openGroup(groupId) {
+  const group = groups[groupId];
+  if (!group) return;
+
+  currentGroupId = groupId;
+
+  document.getElementById('group-title-display').textContent = group.title;
+
+  const grid = document.getElementById('group-project-grid');
+  grid.innerHTML = '';
+  group.projects.forEach(id => {
+    const data = projects[id];
+    if (!data) return;
+    grid.appendChild(buildProjectCard(id, data));
+  });
+
+  showPage(groupPage);
+}
+
+document.getElementById('group-grid').addEventListener('click', e => {
+  const card = e.target.closest('.group-card');
+  if (!card) return;
+  openGroup(card.dataset.group);
+});
+
+document.getElementById('group-project-grid').addEventListener('click', e => {
   const card = e.target.closest('.card');
   if (!card) return;
-  const id = card.dataset.project;
+  openProject(card.dataset.project);
+});
+
+// ─────────────────────────────────────────────────────────────
+// PROJECT PAGE
+// ─────────────────────────────────────────────────────────────
+
+function openProject(id) {
   const data = projects[id];
   if (!data) return;
 
@@ -170,7 +256,11 @@ document.getElementById('project-grid').addEventListener('click', e => {
   });
 
   showPage(projectPage);
-});
+}
+
+// ─────────────────────────────────────────────────────────────
+// NAVIGATION
+// ─────────────────────────────────────────────────────────────
 
 document.getElementById('name-link').addEventListener('click', e => {
   e.preventDefault();
@@ -180,9 +270,51 @@ document.getElementById('bio-back-link').addEventListener('click', e => {
   e.preventDefault();
   showPage(homePage);
 });
-document.getElementById('project-back-link').addEventListener('click', e => {
+document.getElementById('group-back-link').addEventListener('click', e => {
   e.preventDefault();
   showPage(homePage);
+});
+document.getElementById('project-back-link').addEventListener('click', e => {
+  e.preventDefault();
+  // Return to the group this project was opened from, if any.
+  if (currentGroupId && groups[currentGroupId]) {
+    showPage(groupPage);
+  } else {
+    showPage(homePage);
+  }
+});
+
+// ─────────────────────────────────────────────────────────────
+// TOOLBAR: HOME ICON + GROUP NAV DRAWER
+// ─────────────────────────────────────────────────────────────
+
+const groupNav        = document.getElementById('group-nav');
+const groupNavOverlay = document.getElementById('group-nav-overlay');
+
+function openGroupNav() {
+  groupNav.classList.add('open');
+  groupNavOverlay.classList.add('open');
+}
+
+function closeGroupNav() {
+  groupNav.classList.remove('open');
+  groupNavOverlay.classList.remove('open');
+}
+
+document.getElementById('home-icon-btn').addEventListener('click', () => {
+  showPage(homePage);
+});
+
+document.getElementById('menu-icon-btn').addEventListener('click', openGroupNav);
+document.getElementById('group-nav-close').addEventListener('click', closeGroupNav);
+groupNavOverlay.addEventListener('click', closeGroupNav);
+
+document.querySelectorAll('.group-nav-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    openGroup(link.dataset.group);
+    closeGroupNav();
+  });
 });
 
 // ─────────────────────────────────────────────────────────────
