@@ -5,7 +5,16 @@
 const groups = {
   "artifacts-of-healing": {
     title: "Artifacts of Healing",
-    projects: ["unwinding"]
+    projects: [
+      "inherent-shelter",
+      "essential-body",
+      "consecration",
+      "dream-baby",
+      "potent-detours",
+      "extensions",
+      "a-house-in-the-shape-of-a-girl",
+      "unwinding"
+    ]
   },
 
   "hallmarks-of-property": {
@@ -34,6 +43,84 @@ const groups = {
 // ─────────────────────────────────────────────────────────────
 
 const projects = {
+"inherent-shelter": {
+  title: "Inherent shelter, regardless comfort (The Garden)",
+  year: "",
+  description: "24 x 36 in. Acrylic and thread on canvas.",
+  images: [
+    "images/the_garden.JPG",
+    "images/the-garden1.JPG",
+    "images/the-garden2.JPG"
+  ]
+},
+
+"essential-body": {
+  title: "Essential Body",
+  year: "",
+  description: "8 x 8 in. Acrylic on canvas.",
+  images: [
+    "images/essential_body.jpg"
+  ]
+},
+
+"consecration": {
+  title: "Consecration, Lavender Oil",
+  year: "",
+  description: "16 x 16 in. Acrylic on canvas.",
+  images: [
+    "images/consecration.JPG"
+  ]
+},
+
+"dream-baby": {
+  title: "Dream Baby",
+  year: "",
+  description: "19 x 25 in. Dura-lar, acrylic on canvas.",
+  images: [
+    "images/dream-baby.JPG",
+    "images/dream-baby1.JPG"
+  ]
+},
+
+"potent-detours": {
+  title: "Potent Detours",
+  year: "",
+  description: "10.5 x 12.5 in. Acrylic on canvas.",
+  images: [
+    "images/potent-detours.JPG"
+  ]
+},
+
+"extensions": {
+  title: "Extensions",
+  year: "",
+  description: "Silkscreen monoprint, acrylic, colored pencil on paper.",
+  images: [
+    "images/extensions.jpg",
+    "images/extensions1.JPG",
+    "images/extensions-fugitive.JPG",
+    "images/extensions-examine.jpg",
+    "images/extensions-inhabit.JPG"
+  ],
+  // Optional: a caption shown beneath each image (same order as images). Use "" for none.
+  captions: [
+    "",
+    "",
+    "Extensions: Fugitive",
+    "Extensions: Examine",
+    "Extensions: Inhabit"
+  ]
+},
+
+"a-house-in-the-shape-of-a-girl": {
+  title: "A House in the Shape of a Girl",
+  year: "",
+  description: "Acrylic on canvas.",
+  images: [
+    "images/a-house-in-the-shape-of-a-girl.jpg"
+  ]
+},
+
 "anthotypes": {
   title: "Anthotypes",
   year: "2026",
@@ -94,7 +181,7 @@ const projects = {
   "heirloom": {
     title: "Heirloom Up For Grabs",
     year: "2025",
-    description: "Acrylic, oil, and monoprint on discarded headboard.\n\n\"Heirloom Up for Grabs\" considers inheritance and generational cycles and loops through representations of crochet. Crochet as a practice has been passed down from my grandmother to my mother to myself, a creative link that bonds us. A discarded headboard stands in a fictive bedroom, a domestic space, a traditional space. Drawing focus to a blanket created by my own mother, I reimagined her piece through paint, tenderly acknowledging the comfort her art--and love--brings, despite the discomfort my queerness causes my family, addressed through the phrase, \"I'm sorry I can bring you no comfort.\" Vibrant hues push against the rigid edges and compartments of the headboard, and white lace starkly cuts through a deep blue background, interrupted by gestural brushstrokes. The vivid, succulent depiction of the blanket contrasts the restricting, repetitive side of tradition.",
+    description: "Acrylic, oil, and monoprint on discarded headboard.",
     images: [
       "images/heirloom-up-for-grabs.JPG",
       "images/heirloom1.jpg",
@@ -105,7 +192,7 @@ const projects = {
   "frame-of-reference": {
     title: "Frame of Reference",
     year: "2025",
-    description: "24 x 30 in, oil on canvas.\n\nAmidst the fluorescent glow of girlhood in the rolling hills of Missouri wine country, crouching with my grandmother in forest tree forts and letting her ashes pass through my fingers… a mirage stalls the moment. It was there then, in my fondest memories, and it's here now, the burning weight of the mirror, the screen, the scale. A frame of reference I've inherited beckons one to look, to judge, and to compare. This frame of reference can be grounding, if only burned into the retinas. otherwise, the blurring imperfections (inevitable) create such an overcoming feeling of instability and flux. Surrendering comfortability, you will find that the wind moving through the grass and the varying nature of the current will carry you along just fine.\n\nI am sorry I can bring you no comfort. It hurts to grow. I can testify to that pain as my legs ached with each centimeter they stretched. And you called me LL, short for long legs, shortening me to my best part. I still run, in a way at odds with my nature and yours and as I do I trip over my own feet, the crisscrossing bricks, and the tree trunks uprooting them.",
+    description: "24 x 30 in, oil on canvas.",
     images: [
       "images/frame-of-reference.jpg"
     ]
@@ -114,7 +201,7 @@ const projects = {
   "it-will-grow-back": {
     title: "It Will Grow Back",
     year: "2025",
-    description: "Triptych of 3 24\" x 30\" screen prints\n\nMy banana tree in Richmond and poppies growing in St. Louis, using color to evoke contrasting image associations.",
+    description: "Triptych of 3 24\" x 30\" screen prints",
     images: [
       "images/it-will-grow-back.jpg",
       "images/IWGBduo.jpg",
@@ -139,7 +226,7 @@ const projects = {
   "unwinding": {
     title: "Unwinding",
     year: "2025",
-    description: "Screenprinted diptych, 2 11\" x 14\" prints\n\nExploring color transparency, depicting spirals of thought and the unwinding of confining beliefs.",
+    description: "Screenprinted diptych, 2 11\" x 14\" prints",
     images: [
       "images/unwinding.jpg"
     ]
@@ -149,7 +236,7 @@ const projects = {
   "summer-litany": {
     title: "Summer Litany",
     year: "2024",
-    description: "9 5 x 9 in. monoprints. Following the feelings that arose from watching my grandmother’s psychological decline due to dementia, I created a series of monoprints. Within them, a poem, describing a memory of a beautiful night in my backyard is fractured and concealed but never fully accessible, just like a memory blurring and receding. Mark-making grounds the images in a physical reality which remains unclouded by the obsessions and contortions of the mind, and monoprint as a medium emphasizes the seriality of obsessive thought patterns. Through these images, I grieve the inevitable loss that results from the fragility of memory.",
+    description: "9 5 x 9 in. monoprints.",
     images: [
       "images/summer-litany.jpg"
     ]
@@ -196,7 +283,7 @@ function buildProjectCard(id, data) {
   card.innerHTML = `
     <img src="${data.images[0]}" alt="${data.title}" />
     <p class="card-title">${data.title}</p>
-    <p class="card-year">${data.year}</p>
+    ${data.year ? `<p class="card-year">${data.year}</p>` : ''}
   `;
   return card;
 }
@@ -241,18 +328,31 @@ function openProject(id) {
   if (!data) return;
 
   document.getElementById('project-title').textContent = data.title;
-  document.getElementById('project-year-display').textContent = data.year;
+  document.getElementById('project-year-display').textContent = data.year || '';
   document.getElementById('project-description').textContent = data.description;
 
   const imgContainer = document.getElementById('project-images');
   imgContainer.innerHTML = '';
   data.images.forEach((src, i) => {
+    const figure = document.createElement('figure');
+    figure.className = 'project-figure';
+
     const img = document.createElement('img');
     img.src = src;
-    img.alt = data.title;
+    img.alt = (data.captions && data.captions[i]) || data.title;
     img.dataset.index = i;
     img.addEventListener('click', () => openLightbox(data.images, i));
-    imgContainer.appendChild(img);
+    figure.appendChild(img);
+
+    const caption = data.captions && data.captions[i];
+    if (caption) {
+      const figcaption = document.createElement('figcaption');
+      figcaption.className = 'image-caption';
+      figcaption.textContent = caption;
+      figure.appendChild(figcaption);
+    }
+
+    imgContainer.appendChild(figure);
   });
 
   showPage(projectPage);
