@@ -45,8 +45,8 @@ const groups = {
 const projects = {
 "inherent-shelter": {
   title: "Inherent shelter, regardless comfort (The Garden)",
-  year: "",
-  description: "24 x 36 in. Acrylic and thread on canvas.",
+  year: "2026",
+  description: "24 x 36 in, Acrylic and thread on canvas.",
   images: [
     "images/the_garden.JPG",
     "images/the-garden1.JPG",
@@ -56,8 +56,8 @@ const projects = {
 
 "essential-body": {
   title: "Essential Body",
-  year: "",
-  description: "8 x 8 in. Acrylic on canvas.",
+  year: "2026",
+  description: "8 x 8 in, Acrylic on canvas.",
   images: [
     "images/essential_body.jpg"
   ]
@@ -65,8 +65,8 @@ const projects = {
 
 "consecration": {
   title: "Consecration, Lavender Oil",
-  year: "",
-  description: "16 x 16 in. Acrylic on canvas.",
+  year: "2026",
+  description: "16 x 16 in, Acrylic on canvas.",
   images: [
     "images/consecration.JPG"
   ]
@@ -74,8 +74,8 @@ const projects = {
 
 "dream-baby": {
   title: "Dream Baby",
-  year: "",
-  description: "19 x 25 in. Dura-lar, acrylic on canvas.",
+  year: "2026",
+  description: "19 x 25 in, Dura-lar, acrylic on canvas.",
   images: [
     "images/dream-baby.JPG",
     "images/dream-baby1.JPG"
@@ -84,8 +84,8 @@ const projects = {
 
 "potent-detours": {
   title: "Potent Detours",
-  year: "",
-  description: "10.5 x 12.5 in. Acrylic on canvas.",
+  year: "2026",
+  description: "10.5 x 12.5 in, Acrylic on canvas.",
   images: [
     "images/potent-detours.JPG"
   ]
@@ -93,13 +93,13 @@ const projects = {
 
 "extensions": {
   title: "Extensions",
-  year: "",
+  year: "2026",
   description: "Silkscreen monoprint, acrylic, colored pencil on paper.",
   images: [
     "images/extensions.jpg",
     "images/extensions1.JPG",
     "images/extensions-fugitive.JPG",
-    "images/extensions-examine.jpg",
+    "images/extensions-examine.JPG",
     "images/extensions-inhabit.JPG"
   ],
   // Optional: a caption shown beneath each image (same order as images). Use "" for none.
@@ -114,10 +114,10 @@ const projects = {
 
 "a-house-in-the-shape-of-a-girl": {
   title: "A House in the Shape of a Girl",
-  year: "",
-  description: "Acrylic on canvas.",
+  year: "2026",
+  description: "10 x 18 in, Acrylic on canvas.",
   images: [
-    "images/a-house-in-the-shape-of-a-girl.jpg"
+    "images/a-house-in-the-shape-of-a-girl.JPG"
   ]
 },
 
