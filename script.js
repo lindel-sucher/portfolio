@@ -32,7 +32,7 @@ const groups = {
 
   "studies": {
     title: "Studies",
-    projects: ["anthotypes", "for-sophia", "peonies", "tulips"]
+    projects: ["lucky-effigy", "anthotypes", "for-sophia", "peonies", "tulips"]
   }
 
   // ADD MORE GROUPS HERE
@@ -43,6 +43,15 @@ const groups = {
 // ─────────────────────────────────────────────────────────────
 
 const projects = {
+"lucky-effigy": {
+  title: "Lucky Effigy",
+  year: "",
+  description: "9 x 12 in. Acrylic on canvas.",
+  images: [
+    "images/lucky-effigy.JPG"
+  ]
+},
+
 "inherent-shelter": {
   title: "Inherent shelter, regardless comfort (The Garden)",
   year: "2026",
