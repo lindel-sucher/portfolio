@@ -45,7 +45,7 @@ const groups = {
 const projects = {
 "lucky-effigy": {
   title: "Lucky Effigy",
-  year: "",
+  year: "2026",
   description: "9 x 12 in. Acrylic on canvas.",
   images: [
     "images/lucky-effigy.JPG"
