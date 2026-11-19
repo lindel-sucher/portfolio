@@ -7,11 +7,12 @@ const groups = {
     title: "Artifacts of Healing",
     projects: [
       "inherent-shelter",
-      "essential-body",
-      "consecration",
       "dream-baby",
-      "potent-detours",
+      "essential-body",
       "extensions",
+      "consecration",
+      "potent-detours",
+      "devotion",
       "a-house-in-the-shape-of-a-girl",
       "unwinding"
     ]
@@ -43,6 +44,15 @@ const groups = {
 // ─────────────────────────────────────────────────────────────
 
 const projects = {
+"devotion":{
+  title: "Devotion (Manger)",
+  year: "2026",
+  description: "33 x 57 in. Acrylic on canvas.",
+  images: [
+    "images/devotion.jpg"
+  ]
+},
+
 "self-portrait":{
   title: "Self Portrait in May",
   year: "2026",
