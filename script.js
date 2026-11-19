@@ -32,7 +32,7 @@ const groups = {
 
   "studies": {
     title: "Studies",
-    projects: ["lucky-effigy", "anthotypes", "for-sophia", "peonies", "tulips"]
+    projects: ["lucky-effigy", "anthotypes", "for-sophia", "peonies", "self-portrait", "tulips"]
   }
 
   // ADD MORE GROUPS HERE
@@ -43,6 +43,15 @@ const groups = {
 // ─────────────────────────────────────────────────────────────
 
 const projects = {
+"self-portrait":{
+  title: "Self Portrait in May",
+  year: "2026",
+  description: "18 x 24 in. Acrylic on canvas.",
+  images: [
+    "images/self-portrait.JPG"
+  ]
+},
+
 "lucky-effigy": {
   title: "Lucky Effigy",
   year: "2026",
